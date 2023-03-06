@@ -1,9 +1,9 @@
-function input({setToDos}) {
-    return <div>
+function input({setToDos, handleSubmit}) {
+    return <form>
         <label>Please input things to do: </label>
-        <input></input>
-        <button>Add Task</button>
-    </div>
+        <input type="text" onChange={setToDos}/>
+        <button onClick={handleSubmit}>Add Task</button>
+    </form>
 }
 
 export default input;

@@ -1,6 +1,6 @@
 import Task from "./task";
 
-function list (props) {
+function list ({toDos}) {
 
     return <ul>
         <li>Task one 
@@ -12,7 +12,7 @@ function list (props) {
             <button>Delete</button>
         </li>
         <li>
-            <Task />
+            <Task toDos={toDos}/>
         </li>
     </ul>
 }

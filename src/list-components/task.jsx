@@ -1,8 +1,8 @@
 import "./task.Module.css";
 
-function task (props) {
+function task ({toDos}) {
     return <div className="task">
-        <p>demo task</p>
+        <p>{toDos}</p>
         <input type="checkbox"></input>
         <button className="button">Delete</button>
     </div>
