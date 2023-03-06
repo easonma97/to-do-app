@@ -1,6 +1,7 @@
 import Task from "./task";
 
 function list (props) {
+
     return <ul>
         <li>Task one 
             <input type="checkbox"></input>

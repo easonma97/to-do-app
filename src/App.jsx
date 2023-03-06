@@ -1,15 +1,15 @@
-import AddTaskButton from "./input-components/add-task-button";
 import Input from "./input-components/input";
 import List from "./list-components/list";
 import "./App.Module.css";
+import { useState } from "react";
 
 function App() {
+  const [toDos, setToDos] = useState([]);
   return (
     <div className="App">
-      <List />
+      <List toDos={toDos}/>
       <div className="Input-session">
-      <Input />
-      <AddTaskButton />
+      <Input setToDos={setToDos}/>
       </div>
     </div>
   );
