@@ -20,7 +20,7 @@ function Input({setToDos, inputText, setInputText}) {
         <label>Please input things to do: </label>
         <input type="text" value={inputText.content} onChange={handeInputText}/><br />
         <label>How important the thing is?</label>
-        <select onChange={ }>
+        <select>
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>
