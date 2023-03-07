@@ -4,20 +4,13 @@ import "./App.Module.css";
 import { useState } from "react";
 
 function App() {
-  const [toDos, setToDos] = useState("");
-
-  function onChangeHandler(event){
-    setToDos(event.target.value, ...toDos);
-  }
-  function handleSubmit(event){
-    event.preventDefault();
-  }
+  const [toDos, setToDos] = useState([]);
   
   return (
     <div className="App">
       <List toDos={toDos}/>
       <div className="Input-session">
-      <Input setToDos={onChangeHandler} handleSubmit={handleSubmit}/>
+      <Input setToDos={setToDos}/>
       </div>
     </div>
   );
