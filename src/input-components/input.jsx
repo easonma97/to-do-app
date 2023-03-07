@@ -12,11 +12,12 @@ function Input({setToDos}) {
         event.preventDefault();
         const Post = inputText;
         setToDos((existingPosts) => [Post, ...existingPosts]);
+        setInputText('');
       }
 
     return <form onSubmit={handleSubmit}>
         <label>Please input things to do: </label>
-        <input type="text" onChange={handeInputText}/>
+        <input type="text" value={inputText} onChange={handeInputText}/>
         <button>Add Task</button>
     </form> 
 }
